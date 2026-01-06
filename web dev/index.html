@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Aziz | Web & Game Developer</title>
+    <meta name="description"
+        content="Mohamed Aziz - Professional Web Developer, Game Developer, and Full-Stack Freelancer. Crafting polished digital experiences.">
+    <meta name="keywords"
+        content="Mohamed Aziz, Web Developer, Game Developer, Full-Stack, React, Node.js, Unity, Unreal Engine, Portfolio">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader" class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Particle Canvas for Pro Animation -->
+    <canvas id="particle-canvas"></canvas>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Aziz Dev Logo">
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#hero" data-i18n="nav-home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav-about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+
+                <div class="lang-selector">
+                    <button class="lang-btn">EN <i class="fas fa-chevron-down"></i></button>
+                    <div class="lang-dropdown">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="fr">Français</a>
+                        <a href="#" data-lang="ar">العربية</a>
+                    </div>
+                </div>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h2 class="sub-title" data-i18n="hero-sub">Hi, I am</h2>
+                    <h1 class="main-title">Mohamed <span>Aziz</span></h1>
+                    <div class="role-text-container">
+                        <p class="role-text"></p><span class="cursor-blink"></span>
+                    </div>
+                    <p class="description" data-i18n="hero-desc">I turn concepts into polished, real-world products
+                        through creativity, logic,
+                        and precision.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn primary-btn" data-i18n="hero-btn-work">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn" data-i18n="hero-btn-contact">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/aziz_international_logo.png" alt="Aziz International Brand Logo"
+                            class="profile-img">
+                        <div class="abstract-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="about-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p data-i18n="about-p1">
+                            A passionate developer specialized in creating high-performance web applications and
+                            engaging game experiences. With a background in Full-Stack development and Game design, I
+                            blend technical efficiency with artistic vision.
+                        </p>
+                        <p data-i18n="about-p2">
+                            My journey is driven by a constant curiosity for new technologies. Whether it's a
+                            high-performance web app or a complex game system, I bring precision to every line of code.
+                        </p>
+                    </div>
+                    <div class="about-stats stagger-item">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-i18n="stat-exp">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label" data-i18n="stat-prj">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="skills-title">Mastery & Skills</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category stagger-item">
+                        <h3 data-i18n="skill-fe"><i class="fas fa-code"></i> Frontend</h3>
+                        <ul>
+                            <li data-i18n="skill-fe1">HTML5 / CSS3</li>
+                            <li data-i18n="skill-fe2">JavaScript (ES6+)</li>
+                            <li data-i18n="skill-fe3">React.js</li>
+                            <li data-i18n="skill-fe4">Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category stagger-item">
+                        <h3 data-i18n="skill-be"><i class="fas fa-server"></i> Backend</h3>
+                        <ul>
+                            <li data-i18n="skill-be1">Node.js</li>
+                            <li data-i18n="skill-be2">Express</li>
+                            <li data-i18n="skill-be3">MongoDB</li>
+                            <li data-i18n="skill-be4">SQL / PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category stagger-item">
+                        <h3 data-i18n="skill-gd"><i class="fas fa-gamepad"></i> Game Dev</h3>
+                        <ul>
+                            <li data-i18n="skill-gd1">Unity 3D/2D</li>
+                            <li data-i18n="skill-gd2">Unreal Engine</li>
+                            <li data-i18n="skill-gd3">C# / C++</li>
+                            <li data-i18n="skill-gd4">Game Mechanics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="projects-title">Featured Projects</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projects will be dynamic or manual -->
+                    <div class="project-card stagger-item">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+                                alt="E-Commerce Platform" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="prj1-title">E-Commerce Platform</h3>
+                            <p data-i18n="prj1-desc">Full-stack React & Node.js application.</p>
+                            <a href="#" class="view-link"><span data-i18n="prj-view">View Project</span> <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card stagger-item">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop"
+                                alt="Neon Strike Game" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="prj2-title">Neon Strike</h3>
+                            <p data-i18n="prj2-desc">Fast-paced action game built in Unity.</p>
+                            <a href="#" class="view-link"><span data-i18n="prj-view">View Project</span> <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="contact-title">Get In Touch</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required
+                                data-i18n-placeholder="placeholder-name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required
+                                data-i18n-placeholder="placeholder-email">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required
+                                data-i18n-placeholder="placeholder-msg"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" data-i18n="contact-btn">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3 data-i18n="contact-email">Email</h3>
+                                <p>contact@medaziz.dev</p>
+                                <p>azizrabhi40@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-i18n="contact-loc">Location</h3>
+                                <p>Tunis, Tunisia</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/azizrabhi40-maker" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/r_medaziz/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/medazizrabhi12" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span data-i18n="footer-rights">Mohamed Aziz. All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
